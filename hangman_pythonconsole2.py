@@ -43,10 +43,12 @@ for var in range(0, int(chances)):
     
     if all(letter != var for letter in secret) == True: 
         counter += 1
-        
+    
     for iteration in range(0,counter):   
         print(hang[iteration])
-    
+        if counter == int(chances) - 1: 
+            print('YOU LOST')
+        
     counter0 = -1
         
     continue
